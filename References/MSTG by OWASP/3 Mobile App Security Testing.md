@@ -10,7 +10,9 @@ Tips:
 
 ## Vulnerability Analysis
 [_Static vs Dynamic](../_Static%20vs%20Dynamic.md)
+[_3.1 Testing Tools](_3.1%20Testing%20Tools.md)
 Looking for vulnerabilities in an app, it can be done manually or automatically using scanner.
+
 
 ### Static Application Security Testing (SAST)
 Examining an application's component without executing them, by analyzing the source code either manually or automatically.
@@ -31,7 +33,10 @@ Using analysis tools can be speed up the review process of Static Application Se
 
 Some static analysis tools run against the compiled app only, it is better to fed original source code and run as live-analysis plugins in the IDE.
 
-
+ Automated code analysis produce plenty false positives, particularly if they are not configured for the target environment.  Security professional must review the results.
+ 
+ ### Dynamic Analysis
+ 
 
 
 
