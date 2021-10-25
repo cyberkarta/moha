@@ -28,5 +28,14 @@ Load like regular web pages, but its possible to work offline and access mobile 
 
 ## Security Testing
 A mobile app security test is usually part of a larger security assessment or penetration test that encompasses the client-server architecture and server-side APIs used by the mobile app.
-- Black-box testing, testing without any information about the tested app.
-- White-box testing, 
+- Black-box testing, testing without any information about the tested app, represents real attacker
+- White-box testing, the tester has full knowledge of the app (the source code, documentation, and diagrams), faster testing and granular test cases.
+- Gray-box, in between black-box testing and white-box testing. Usually the tester get credentials only and other information is intended to be discovered.
+
+Tips:
+- it is better to request the source code so that you can use the testing time as efficiently as possible. White-box test is the way to go if the app hasn't been tested before.
+- Even though decompiling is straightforward on Android, the source code may be obfuscated. It takes time to de-obfuscate it.
+
+### Vulnerability Analysis
+looking for vulnerabilities in an app, it can be done manually or automatically using scanner.
+- Static Application Security Testing 
