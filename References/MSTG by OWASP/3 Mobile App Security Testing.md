@@ -35,7 +35,15 @@ Some static analysis tools run against the compiled app only, it is better to fe
 
  Automated code analysis produce plenty false positives, particularly if they are not configured for the target environment.  Security professional must review the results.
  
- ### Dynamic Analysis
+ ### Dynamic Application Security Testing (DAST)
+ Evaluation and test via their real-time execution. Conducted both at the mobile platform layer against backend services and APIs.
+ 
+ Check:
+ - Data in transit
+ - Authentication and authorization
+ - Server configuration errors
+
+
  
 
 
