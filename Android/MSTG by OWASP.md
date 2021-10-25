@@ -27,3 +27,6 @@ Load like regular web pages, but its possible to work offline and access mobile 
 
 
 ## Security Testing
+A mobile app security test is usually part of a larger security assessment or penetration test that encompasses the client-server architecture and server-side APIs used by the mobile app.
+- Black-box testing, testing without any information about the tested app.
+- White-box testing, 
