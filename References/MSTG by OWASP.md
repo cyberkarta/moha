@@ -49,4 +49,12 @@ Common approach: manual code analysis entails identifying key security vulnerabi
 
 Advantage: good for identifying vulnerabilities in the business logic, standards violations, and design flaws.
 
+Notes: 
+- code review requires an expert code reviewer who is proficient in both the language and the frameworks used for the mobile application.
+- Full code review can be a slow, tedious, time-consuming process for the reviewer, especially given large code bases with many dependencies.
+
+
+**Automated Source Code Analysis**
+Using analysis tools can be speed up the review process of Static Application Security Testing (SAST). They check the source code for compliance with a predefined set of rules of industry best practices.
+
  

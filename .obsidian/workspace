@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Android/MSTG by OWASP.md",
+            "file": "References/MSTG by OWASP.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android/MSTG by OWASP.md",
+                "file": "References/MSTG by OWASP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +88,8 @@
   },
   "active": "ea39550c07ba7dc4",
   "lastOpenFiles": [
-    "Android/MSTG by OWASP.md",
-    "Android/_Static vs Dynamic.md",
+    "References/MSTG by OWASP.md",
+    "References/_Static vs Dynamic.md",
     "Android/__fleet.md",
     "Android/Android App Testing.md",
     "Android/Mobile App Testing Guide.md",
