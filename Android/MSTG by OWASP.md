@@ -37,5 +37,16 @@ Tips:
 - Even though decompiling is straightforward on Android, the source code may be obfuscated. It takes time to de-obfuscate it.
 
 ### Vulnerability Analysis
-looking for vulnerabilities in an app, it can be done manually or automatically using scanner.
-- Static Application Security Testing 
+[_Static vs Dynamic](_Static%20vs%20Dynamic.md)
+Looking for vulnerabilities in an app, it can be done manually or automatically using scanner.
+
+#### Static Application Security Testing (SAST)
+Examining an application's component without executing them, by analyzing the source code either manually or automatically.
+
+**Manual code review**, manually analyzing the mobile application's source code. Can also be done using 'grep' command or even line-by-line examination of the source code. IDE (Integrated Development Environment) often provide basic code review functions and can be extended with various tools.
+
+Common approach: manual code analysis entails identifying key security vulnerability indicators by searching for certain APIs and keywords, such as database-related method calls like "executeStatement" or "executeQuery", these words are good starting points.
+
+Advantage: good for identifying vulnerabilities in the business logic, standards violations, and design flaws.
+
+ 
