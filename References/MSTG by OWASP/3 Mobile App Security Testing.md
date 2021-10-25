@@ -43,8 +43,14 @@ Some static analysis tools run against the compiled app only, it is better to fe
  - Authentication and authorization
  - Server configuration errors
 
+## Avoiding False Positives
+Example: some vulnerabilities are exploitable in web browser, but not in the mobile app. For example: CSRF. Mobile apps even in webview, nay malicious link the user clicks opens in the default browser, which has a separate cookie store. For this reason, reflected XSS is also rarely an issue.
 
+However stored XSS can be an issue if the app includes webview. It can lead to command execution if the app exports JavaScript interfaces.
  
+ > in any case, consider exploit scenarios when performing risk assessment. Don't blindly trust the scanning tool's output.
+
+
 
 
 
