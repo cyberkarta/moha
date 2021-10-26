@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "References/MSTG by OWASP/_1. Key Areas.md",
+            "file": "References/__fleet.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "References/MSTG by OWASP/_1. Key Areas.md",
+                "file": "References/__fleet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "ea39550c07ba7dc4",
   "lastOpenFiles": [
+    "References/Untitled.md",
     "References/MSTG by OWASP/_1. Key Areas.md",
     "References/MSTG by OWASP/3 Mobile App Security Testing.md",
     "References/_Static vs Dynamic.md",
@@ -96,7 +97,6 @@
     "Android/__fleet.md",
     "Android/Android App Testing.md",
     "Android/Mobile App Testing Guide.md",
-    "Android/Mobile Top 10 2016.md",
-    "Android/Android Basic - Keychain.md"
+    "Android/Mobile Top 10 2016.md"
   ]
 }
