@@ -90,13 +90,13 @@
   "lastOpenFiles": [
     "References/MSTG by OWASP/3 Mobile App Security Testing.md",
     "References/MSTG by OWASP/2. Mobile App Taxonomy.md",
-    "References/INE/__Android Studio.md",
-    "Android/Mobile Top 10 2016.md",
+    "Android/__fleet.md",
     "Android/Mobile App Testing Guide.md",
     "Android/Android Basic - Keychain.md",
+    "References/INE/__Android Studio.md",
+    "Android/Mobile Top 10 2016.md",
     "Android/Android Basic.md",
     "Android/Android App Testing.md",
-    "References/MSTG by OWASP/_1. Key Areas.md",
-    "References/_Static vs Dynamic.md"
+    "References/MSTG by OWASP/_1. Key Areas.md"
   ]
 }
