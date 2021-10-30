@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "References/MSTG by OWASP/3 Mobile App Security Testing.md",
+            "file": "References/INE/__Android Studio.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "References/MSTG by OWASP/3 Mobile App Security Testing.md",
+                "file": "References/INE/__Android Studio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,12 +88,12 @@
   },
   "active": "ea39550c07ba7dc4",
   "lastOpenFiles": [
+    "References/INE/__Android Studio.md",
     "References/MSTG by OWASP/3 Mobile App Security Testing.md",
     "References/MSTG by OWASP/2. Mobile App Taxonomy.md",
     "Android/__fleet.md",
     "Android/Mobile App Testing Guide.md",
     "Android/Android Basic - Keychain.md",
-    "References/INE/__Android Studio.md",
     "Android/Mobile Top 10 2016.md",
     "Android/Android Basic.md",
     "Android/Android App Testing.md",
