@@ -81,4 +81,15 @@ Output: `Db3E0/I85K9Aik2yJ4X1dDP3Wq0=` sama dengan isi di MANIFEST.MF
 CERT.RSA dituliskan dalam format biner, kamu bisa mengkonversi formatnya dari DER ke PEM agar bisa 'terbaca'. `openssl pkcs7 -inform DER -pring_certs -out cert.pem -in CERT.RSA`. Kemudian kamu bisa membaca public key dari sertifikat tersebut `openssl x509 -in cert.pem -noout -text`
 ![](attachments/Pasted%20image%2020211031214102.png)
 
-Pada CERT.SF kamu bisa melihat list reso
+Pada CERT.SF kamu bisa melihat list resource file, hash dari file MANIFEST.MF juga ditampilkan di sini.
+```http
+Signature-Version: 1.0  
+Created-By: 1.0 (Android)  
+SHA1-Digest-Manifest: AeXK7rPJFQU178iionkxrR8X034=  
+Name: res/drawable-hdpi/ab_bg.9.png  
+SHA1-Digest: h/8GB05R+rJmh4bouTC/4XnutGA=  
+Name: res/drawable-xxhdpi/g7.png  
+SHA1-Digest: z/rM+901mHn1r5dFVvfc+19n6bQ=
+```
+
+page 62
