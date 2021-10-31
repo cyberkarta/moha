@@ -14,7 +14,7 @@ Getting started with newer Android Studio and choose which important for securit
 ## App Manifest
 Example: https://github.com/swisscodemonkeys/appbrain-sdk/blob/master/example/AndroidManifest.xml
 
-![](attachments/Pasted%20image%2020211030222630.png)
+`<package>` berisi nama aplikasi, yaitu `com.appbrain.example`.
 
 `<uses-sdk>` mengandung `minSdkVersion` yang memberitahukan versi Android terlama yang kompatibel dengan aplikasi ini.
 `targetSdkVersion` adalah versi OS yang ditujukan oleh aplikasi ini dan juga menentukan apakah harus menyalakan fitur compatibility apabila dijalankan pada versi Android terbaru.
