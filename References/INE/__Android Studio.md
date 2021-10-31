@@ -49,6 +49,13 @@ SHA1-Digest: dp8PyrXMy2IBxgTz19x7DATpqz8=
 - Template HTML yang digunakan pada Webviews.
 
 ## Code Signing
-Android tidak akan menjalankan program yang unsigned, walaupun kamu membuat program tersebut untuk testing. Untuk melakukan code signing, digunakan public-key cryptography. Informasi public key tersebut dimasukkan ke dalam sertifikat (X.509 certificate) untuk melakukan verifikasi keaslian file tersebut. Sertifikat ini juga berisi informasi tentang organisasi pembuat aplikasi.
+Android tidak akan menjalankan program yang unsigned, walaupun kamu membuat program tersebut untuk testing. Untuk melakukan code signing, digunakan public-key cryptography. Informasi public key tersebut dimasukkan ke dalam sertifikat (X.509 certificate) untuk melakukan verifikasi keaslian file tersebut. Sertifikat ini juga berisi informasi tentang organisasi pembuat aplikasi. 
 
+Code signing pada Android ini tidak memerlukan Certificate Authority (CA), self-signed certificate tidak mengurangi keamanannya. Terlebih lagi, nama entitas dan expiration date tidak diverifikasi oleh Android. Android hanya menggunakan sertifikat ini sebagai binary blob.
 
+Proses signing APK sudah built-in pada Android Studio dan hampir tidak terlihat oleh developer.
+
+Abstrak prosesnya:
+1. Pembuatan pair key, contohnya dengan menggunakan keytool. `keytool -genkey -v -keystore foo.keystore -alias myalias -keyalg RSA -keysize 2048 -validity 10000`. Alias name adalah nama yang digunakan untuk sign aplikasi kamu.
+2. Verifikasi signature, contohnya dengan menggunakan jarsigner. `jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore foo.k`
+3. 
