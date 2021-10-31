@@ -57,5 +57,28 @@ Proses signing APK sudah built-in pada Android Studio dan hampir tidak terlihat 
 
 Abstrak prosesnya:
 1. Pembuatan pair key, contohnya dengan menggunakan keytool. `keytool -genkey -v -keystore foo.keystore -alias myalias -keyalg RSA -keysize 2048 -validity 10000`. Alias name adalah nama yang digunakan untuk sign aplikasi kamu.
-2. Verifikasi signature, contohnya dengan menggunakan jarsigner. `jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore foo.k`
-3. 
+2. Verifikasi signature, contohnya dengan menggunakan jarsigner. `jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore foo.keystore test.apk myalias`
+
+Kamu juga bisa menginspeksi status signature dari APK dengan jarsigner. `jarsigner -verify -verbose -certs com.foo.android.activity.apk`
+
+Didalam MANIFEST.MF kamu bisa melihat list dari file hash yang sudah diencode base64.
+
+```http
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: res/drawable-xxhdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png
+SHA1-Digest: Db3E0/I85K9Aik2yJ4X1dDP3Wq0=
+
+Name: res/drawable-xhdpi-v4/opt_more_item_close_press.9.png
+SHA1-Digest: Xxm9cr4gDbEEnnYvxRWfzcIXBEM=
+
+```
+
+Kamu bisa memverifikasi file hash tersebut dengan openssl `openssl sha1 -binary res/drawable-xxhdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png | openssl base64`
+Output: `Db3E0/I85K9Aik2yJ4X1dDP3Wq0=` sama dengan isi di MANIFEST.MF
+
+CERT.RSA dituliskan dalam format biner, kamu bisa mengkonversi formatnya dari DER ke PEM agar bisa 'terbaca'. `openssl pkcs7 -inform DER -pring_certs -out cert.pem -in CERT.RSA`. Kemudian kamu bisa membaca public key dari sertifikat tersebut `openssl x509 -in cert.pem -noout -text`
+![](attachments/Pasted%20image%2020211031214102.png)
+
+Pada CERT.SF kamu bisa melihat list reso
