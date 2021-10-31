@@ -16,8 +16,11 @@ Example: https://github.com/swisscodemonkeys/appbrain-sdk/blob/master/example/An
 
 `<package>` berisi nama aplikasi, yaitu `com.appbrain.example`.
 
+![](attachments/Pasted%20image%2020211031205729.png)
 `<uses-sdk>` mengandung `minSdkVersion` yang memberitahukan versi Android terlama yang kompatibel dengan aplikasi ini.
 `targetSdkVersion` adalah versi OS yang ditujukan oleh aplikasi ini dan juga menentukan apakah harus menyalakan fitur compatibility apabila dijalankan pada versi Android terbaru.
 
 Memberikan support ke Android versi lama dapat membuka vulnerability yang terkandung pada versi Android tersebut.
 
+## Directories
+`/lib` stores libraries and precompiled code.
