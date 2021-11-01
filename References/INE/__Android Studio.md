@@ -102,4 +102,9 @@ Pada CERT.SF dan MANIFEST.MF terdapat file yang sama, namun berbeda hash valueny
 
 Sangat penting bagi organisasi untuk melindungi private key yang digunakan, apabila ter-compromise:
 - Tidak ada cara untuk mengembalikannya dan user tetap mendapatkan update dari play store.
-- Jika menggunakan key baru, Play Store akan menganggap ap
+- Jika menggunakan key baru, Play Store akan menganggap aplikasi tersebut adalah aplikasi baru.
+- Attacker dapat memberikan update malicious kepada pengguna aplikasi.
+
+Dua mode signing pada Android Studio:
+- Debug, untuk keperluan testing dan tidak digunakan untuk sign aplikasi yang dipublish. Sehingga kamu diperkenankan untuk menjalankan aplikasi melalui USB atau emulator.
+- Release, untuk keperluan aplikasi yang dipublish.
