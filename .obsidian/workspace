@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Android/Android Basic.md",
+            "file": "References/INE/__Android Studio.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android/Android Basic.md",
+                "file": "References/INE/__Android Studio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +88,8 @@
   },
   "active": "ea39550c07ba7dc4",
   "lastOpenFiles": [
-    "Android/Android Basic.md",
     "References/INE/__Android Studio.md",
+    "Android/Android Basic.md",
     "References/MSTG by OWASP/3 Mobile App Security Testing.md",
     "References/MSTG by OWASP/2. Mobile App Taxonomy.md",
     "Android/__fleet.md",

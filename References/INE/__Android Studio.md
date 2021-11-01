@@ -49,7 +49,11 @@ SHA1-Digest: dp8PyrXMy2IBxgTz19x7DATpqz8=
 - Template HTML yang digunakan pada Webviews.
 
 ## Code Signing
-Android tidak akan menjalankan program yang unsigned, walaupun kamu membuat program tersebut untuk testing. Untuk melakukan code signing, digunakan public-key cryptography. Informasi public key tersebut dimasukkan ke dalam sertifikat (X.509 certificate) untuk melakukan verifikasi keaslian file tersebut. Sertifikat ini juga berisi informasi tentang organisasi pembuat aplikasi. 
+Android tidak akan menjalankan program yang unsigned, walaupun kamu membuat program tersebut untuk testing. Bahkan seluruh entry dari APK harus di-sign dengan sertifikat yang sama. Hal ini dikarenakan cara OTA (Over-The-Air) update yang didistribusikan kurang adanya signature menyeluruh karena default format dari JAR.
+
+![](attachments/Pasted%20image%2020211101155043.png)
+
+Untuk melakukan code signing, digunakan public-key cryptography. Informasi public key tersebut dimasukkan ke dalam sertifikat (X.509 certificate) untuk melakukan verifikasi keaslian file tersebut. Sertifikat ini juga berisi informasi tentang organisasi pembuat aplikasi. 
 
 Code signing pada Android ini tidak memerlukan Certificate Authority (CA) karena self-signed certificate tidak mengurangi keamanannya. Terlebih lagi, nama entitas dan expiration date tidak diverifikasi oleh Android. Android hanya menggunakan sertifikat ini sebagai binary blob.
 
@@ -92,4 +96,10 @@ Name: res/drawable-xxhdpi/g7.png
 SHA1-Digest: z/rM+901mHn1r5dFVvfc+19n6bQ=
 ```
 
-page 62
+Pada CERT.SF dan MANIFEST.MF terdapat file yang sama, namun berbeda hash valuenya.
+- Value hash pada MANIFEST.MF adalah file itu sendiri.
+- Value hash pada CERT.SF adalah hash dari baris pada MANIFEST.MF.
+
+Sangat penting bagi organisasi untuk melindungi private key yang digunakan, apabila ter-compromise:
+- Tidak ada cara untuk mengembalikannya dan user tetap mendapatkan update dari play store.
+- Jika menggunakan key baru, Play Store akan menganggap ap
