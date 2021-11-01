@@ -51,7 +51,7 @@ SHA1-Digest: dp8PyrXMy2IBxgTz19x7DATpqz8=
 ## Code Signing
 Android tidak akan menjalankan program yang unsigned, walaupun kamu membuat program tersebut untuk testing. Untuk melakukan code signing, digunakan public-key cryptography. Informasi public key tersebut dimasukkan ke dalam sertifikat (X.509 certificate) untuk melakukan verifikasi keaslian file tersebut. Sertifikat ini juga berisi informasi tentang organisasi pembuat aplikasi. 
 
-Code signing pada Android ini tidak memerlukan Certificate Authority (CA), self-signed certificate tidak mengurangi keamanannya. Terlebih lagi, nama entitas dan expiration date tidak diverifikasi oleh Android. Android hanya menggunakan sertifikat ini sebagai binary blob.
+Code signing pada Android ini tidak memerlukan Certificate Authority (CA) karena self-signed certificate tidak mengurangi keamanannya. Terlebih lagi, nama entitas dan expiration date tidak diverifikasi oleh Android. Android hanya menggunakan sertifikat ini sebagai binary blob.
 
 Proses signing APK sudah built-in pada Android Studio dan hampir tidak terlihat oleh developer.
 
