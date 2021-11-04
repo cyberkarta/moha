@@ -108,3 +108,6 @@ Sangat penting bagi organisasi untuk melindungi private key yang digunakan, apab
 Dua mode signing pada Android Studio:
 - Debug, untuk keperluan testing dan tidak digunakan untuk sign aplikasi yang dipublish. Sehingga kamu diperkenankan untuk menjalankan aplikasi melalui USB atau emulator.
 - Release, untuk keperluan aplikasi yang dipublish.
+
+
+
