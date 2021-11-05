@@ -109,5 +109,7 @@ Dua mode signing pada Android Studio:
 - Debug, untuk keperluan testing dan tidak digunakan untuk sign aplikasi yang dipublish. Sehingga kamu diperkenankan untuk menjalankan aplikasi melalui USB atau emulator.
 - Release, untuk keperluan aplikasi yang dipublish.
 
+APK harus di-align setelah di-sign, bisa dilakukan dengan zipalign pada direktori:
+`<sdk install_location>/sdk/build-tools/<version>/`
 
 
