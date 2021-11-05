@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "References/INE/__Android Studio.md",
+            "file": "References/INE/Reversing APK.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "References/INE/__Android Studio.md",
+                "file": "References/INE/Reversing APK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "ea39550c07ba7dc4",
   "lastOpenFiles": [
-    "References/INE/__Android Studio.md",
+    "References/INE/Reversing APK.md",
+    "References/INE/Android APK Structure.md",
+    "References/INE/attachments/Pasted image 20211030222630.png",
+    "Android/Mobile Top 10 2016.md",
+    "Android/Android Basic - Keychain.md",
     "Android/Android Basic.md",
+    "Android/Android App Testing.md",
     "References/MSTG by OWASP/3 Mobile App Security Testing.md",
     "References/MSTG by OWASP/2. Mobile App Taxonomy.md",
-    "Android/__fleet.md",
-    "Android/Mobile App Testing Guide.md",
-    "Android/Android Basic - Keychain.md",
-    "Android/Mobile Top 10 2016.md",
-    "Android/Android App Testing.md",
-    "References/MSTG by OWASP/_1. Key Areas.md"
+    "Android/__fleet.md"
   ]
 }
