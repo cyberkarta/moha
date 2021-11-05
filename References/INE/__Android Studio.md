@@ -109,7 +109,25 @@ Dua mode signing pada Android Studio:
 - Debug, untuk keperluan testing dan tidak digunakan untuk sign aplikasi yang dipublish. Sehingga kamu diperkenankan untuk menjalankan aplikasi melalui USB atau emulator.
 - Release, untuk keperluan aplikasi yang dipublish.
 
-APK harus di-align setelah di-sign, bisa dilakukan dengan zipalign pada direktori:
-`<sdk install_location>/sdk/build-tools/<version>/`
+## Zipalign
+APK harus di-align setelah di-sign, tujuannya adalah memastikan file yang telah di uncompress sesuai dengan awalan dari file. File tersebut kemudian dapat diakses melalui `mmap` dan mengurangi kebutuhan data tersebut untuk di-copy ke dalam RAM. Hal ini dapat mengoptimasi memori.
 
+Penggunaan zipalign harus disesuaikan dengan app-signing tool yang digunakan.
+- Jika menggunakan apksigner, zipalign harus dilakukan sebelum APK di-sign.
+- Jika menggunakan jarsigner, zipalign harus dilakukan setelah APK di-sign.
 
+**Penggunaan:**
+Zipalign berada pada direktori:
+```bash
+<sdk install_location>/sdk/build-tools/<version>/
+```
+
+Align `infile.apk` dan disimpan sebagai `outfile.apk`
+```bash
+zipalign -p -f -v 4 infile.apk outfile.apk
+```
+
+Untuk mengkonfirmasi alignment pada `existing.apk`
+```bash
+zipalign -c -v 4 existing.apk
+```
