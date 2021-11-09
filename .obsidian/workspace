@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Android/Android App Development.md",
+            "file": "Android/Android Basic.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android/Android App Development.md",
+                "file": "Android/Android Basic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +88,9 @@
   },
   "active": "ea39550c07ba7dc4",
   "lastOpenFiles": [
-    "Android/Android App Development.md",
     "Android/Android Basic.md",
     "Android/Android App Testing.md",
+    "Android/Android App Development.md",
     "References/INE/Reversing APK.md",
     "References/INE/Android APK Structure.md",
     "References/INE/attachments/Pasted image 20211030222630.png",
