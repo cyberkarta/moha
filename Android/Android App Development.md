@@ -1,5 +1,8 @@
 # Android App Development
 
+## Activity
+- Activity bisa diartikan sebagai screen pada Android kamu. Activity juga merepresentasikan kotlin class.
+- Activity stack
 ## Mendesain Layout
 - Element di dalam layout (tombol, gambar, etc) disebut dengan view.
  ![](attachments/viewgroup_2x.png)
@@ -12,7 +15,7 @@
 Tiga tipe layout:
 1. Constraint  (preferable, flat, less computation)
 2. Linear
-3. Static (using dp scale)
+3. Webview
 
 > istilah penting: padding, edit text, text view, button
 
@@ -39,4 +42,10 @@ Tiga tipe layout:
 	- lokasi relatif secara horizontal
 - Untuk membuat view yang berjejeran kamu bisa gunakan `chains -> horizontal chain` dan mengatur `layout_width` menjadi 0dp, artinya menyamakan ukuran dari view sesuai dengan constraint.
 - Apabila tiap view memiliki ukuran berbeda, kamu bisa gunakan fitur `baseline` untuk menyamakan lokasi.
-- Kamu bisa gunakan guideline, sebuah garis yang bisa dijadikan acuan untuk menentukan lokasi constraint.
+- Kamu bisa gunakan `guideline`, sebuah garis yang bisa dijadikan acuan untuk menentukan lokasi constraint.
+
+> istilah penting: chains, layout_width=0dp, baseline, guideline
+
+### Button
+> istilah penting SetOnClickListener
+
