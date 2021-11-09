@@ -3,6 +3,16 @@
 ## Activity
 - Activity bisa diartikan sebagai screen pada Android kamu. Activity juga merepresentasikan kotlin class.
 - Activity stack
+![](attachments/Pasted%20image%2020211109164056.png)
+
+- Activity life-cycle
+![](attachments/Pasted%20image%2020211109164204.png)
+
+- Jika ada aplikasi dengan prioritas lebih tinggi membutuhkan memori, Android bisa mematikan aplikasi lain, kemudian jika user ingin membukanya lagi, proses dimulai dari `onCreate()`
+- State `onStop()` tidak dijamin akan dipanggil, jika membutuhkan save data lebih baik dilakukan saat `onPause()`.
+- Jika aplikasi berakhir pada `onStop()`, jika user membuka kembali aplikasi, akan dimulai dari `onStart()`
+- State `onDestroy()` bisa jadi ketika user menutup aplikasi, menekan tombol back, atau ketika aplikasi ditutup oleh sistem.
+	
 ## Mendesain Layout
 - Element di dalam layout (tombol, gambar, etc) disebut dengan view.
  ![](attachments/viewgroup_2x.png)
@@ -49,3 +59,9 @@ Tiga tipe layout:
 ### Button
 > istilah penting SetOnClickListener
 
+## Reference
+**Youtube**
+Philip Lackner https://www.youtube.com/channel/UCKNTZMRHPLXfqlbdOI7mCkg
+
+**Android Developer Documentation**
+https://developer.android.com
