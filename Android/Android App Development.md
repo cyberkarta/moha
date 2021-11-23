@@ -89,8 +89,6 @@ activity_main.xml
  app:layout_constraintTop_toBottomOf="@+id/tvCount" />
 ```
 
-Tips and Trick here
-activity_main.xml
 MainActivity.kt
 ```kt
 var countMe = 0  
@@ -101,6 +99,15 @@ btnPlusOne.setOnClickListener {
 ```
 
 ![](attachments/Pasted%20image%2020211123160020.png)
+
+Tips and Trick here
+activity_main.xml
+- use abbreviation to declare faster, i.e. textSize = tesi, textAlignment = teal (Android Studio notices it)
+- use ellipsize + define line to limit the text, and show triple dots (...)
+```xml
+<textSize 
+/>
+```
 
 ## Reference
 **Youtube**
