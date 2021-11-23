@@ -57,7 +57,8 @@ Tiga tipe layout:
 > istilah penting: chains, layout_width=0dp, baseline, guideline
 
 ### Button
-> istilah penting SetOnClickListener
+ btnApply.setOnClickListener { } to do process after the button is clicked
+> istilah penting btnApply.setOnClickListener
 
 ## Reference
 **Youtube**
