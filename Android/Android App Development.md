@@ -1,4 +1,16 @@
 # Android App Development
+## Kotlin
+Variable = var (nilainya bisa diubah)
+```kt
+var duit = 1000
+duit++
+```
+
+Constant = val (nilainya tidak bisa diubah)
+```kt
+val duit = 1000 // nilainya tidak bisa direassign
+```
+
 
 ## Activity
 - Activity bisa diartikan sebagai screen pada Android kamu. Activity juga merepresentasikan kotlin class.
@@ -103,11 +115,19 @@ btnPlusOne.setOnClickListener {
 Tips and Trick here
 activity_main.xml
 - use abbreviation to declare faster, i.e. textSize = tesi, textAlignment = teal (Android Studio notices it)
+- You can use color based on (applied in textColor)
+	- defined directly using hex
+	- defined in res/values/color.xml (call it with `@color:colorname`)
+	- predefined by Android (call it with `@android:color/colorname`)
 - use ellipsize + define line to limit the text, and show triple dots (...)
 ```xml
 <textSize 
+android:ellipsize="end"
+android:lines=3		  
 />
 ```
+- sort the xml declaration using ctrl + alt + l , it will put id on the first line and sort the remaining.
+
 
 ## Reference
 **Youtube**
