@@ -60,6 +60,48 @@ Tiga tipe layout:
  btnApply.setOnClickListener { } to do process after the button is clicked
 > istilah penting btnApply.setOnClickListener
 
+## Creating Count App
+activity_main.xml
+```xml
+<TextView  
+ android:id="@+id/tvCount"  
+ android:layout_width="wrap_content"  
+ android:layout_height="wrap_content"  
+ android:text="Let's count together: 0"  
+ android:textAlignment="center"  
+ android:textAllCaps="true"  
+ android:textColor="@android:color/holo_green_light"  
+ android:textSize="24sp"  
+ android:textStyle="bold|italic"  
+ app:layout_constraintBottom_toBottomOf="parent"  
+ app:layout_constraintEnd_toEndOf="parent"  
+ app:layout_constraintStart_toStartOf="parent"  
+ app:layout_constraintTop_toTopOf="parent" />  
+  
+<Button  
+ android:id="@+id/btnPlusOne"  
+ android:layout_width="wrap_content"  
+ android:layout_height="wrap_content"  
+ android:text="+1"  
+ app:layout_constraintEnd_toEndOf="parent"  
+ app:layout_constraintHorizontal_bias="0.526"  
+ app:layout_constraintStart_toStartOf="parent"  
+ app:layout_constraintTop_toBottomOf="@+id/tvCount" />
+```
+
+Tips and Trick here
+activity_main.xml
+MainActivity.kt
+```kt
+var countMe = 0  
+btnPlusOne.setOnClickListener {  
+ countMe++  
+    tvCount.text = "Let's count together: $countMe"  
+}
+```
+
+![](attachments/Pasted%20image%2020211123160020.png)
+
 ## Reference
 **Youtube**
 Philip Lackner https://www.youtube.com/channel/UCKNTZMRHPLXfqlbdOI7mCkg
